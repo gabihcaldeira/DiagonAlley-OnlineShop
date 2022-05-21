@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/8aa664244c.js" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="./js/database.js"></script>
+    <script defer type="text/javascript" src="./js/index.js"></script>
+    <title>Diagon Alley OnlineShop - E-commerce</title>
+</head>
+
+<body>
+    <header>
+        <section class="head">
+            <a href="./index.html" id="logo">
+                <figure>
+                    <img src="./img/logos/diagonAlley.png" alt="Diagon Alley Logo" id="mainLogo">
+                    <figcaption>Diagon Alley Loja Online</figcaption>
+                </figure>
+            </a>
+        </section>
+
+        <nav class="head">
+
+            <button id="all">
+                <figure>
+                    <img src="./img/logos/todos2.png" alt="Diagon Alley Logo" id="todos">
+                    <figcaption>Diagon Alley Loja Online</figcaption>
+                </figure>
+            </button>
+
+            <button id="books">
+                <figure>
+                    <img src="./img/logos/flourishBlotts.png" alt="Flourish & Blotts Logo" id="booksLogo">
+                    <figcaption>Produtos Flourish &
+                        Blotts</figcaption>
+                </figure>
+            </button>
+
+            <button id="wands">
+                <figure>
+                    <img src="./img/logos/ollivanders.png" alt="Ollivanders Logo" id="wandsLogo">
+                    <figcaption>Produtos Ollivanders</figcaption>
+                </figure>
+            </button>
+
+            <button id="weasley">
+                <figure>
+                    <img src="./img/logos/weasleyShop.png" alt="Weasleys' Wizard Wheezes Logo" id="weasleyLogo">
+                    <figcaption>Produtos Weasleys' Wizard Wheezes</figcaption>
+                </figure>
+            </button>
+
+            <button id="quidditch">
+                <figure>
+                    <img src="./img/logos/QualityQuidditchSupplies.png" alt="Quality Quidditch Supplies Logo"
+                        id="quidditchLogo">
+                    <figcaption>Produtos Quality Quidditch Supplies</figcaption>
+                </figure>
+            </button>
+
+        </nav>
+
+    </header>
+
+    <section id="mainSection">
+        <main></main>
+
+        <aside>
+            <section id="search">
+                <input type="text" id="searchBar" placeholder="Digite aqui sua pesquisa">
+                <button id="searchBtn">Pesquisar</button>
+            </section>
+
+            <section id="shopCart">
+                <h4 id="cartTitle">Carrinho de Compras</h4>
+                <div id="cart">
+                    <div id="emptyCart" class="noProdCart">
+                        <p class="emptyCart">Carrinho Vazio</p>
+                        <button class="emptyCart" id="addProducts">Adicionar Itens</button>
+                    </div>
+                    <div id="cartProducts"></div>
+
+                </div>
+                <div id="footer1" class="footer hidden">
+                    <p>Quantidade:</p>
+                    <p id="quantity">0</p>
+                </div>
+                <div id="footer2" class="footer hidden">
+                    <p>Total:</p>
+                    <p id="priceOnCart">$0</p>
+                </div>
+            </section>
+        </aside>
+    </section>
+</body>
+
+</html>

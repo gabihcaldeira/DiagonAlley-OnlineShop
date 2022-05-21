@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+figcaption {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #552f3d;
+    box-shadow: 0px 10px 25px -5px rgba(4, 4, 4, 0.25);
+    padding-top: 10px;
+
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav.head button:hover img {
+    transform: scale(1.2);
+}
+
+#all,
+#books,
+#wands,
+#quidditch,
+#weasley {
+    background: none;
+    border: none;
+}
+
+#todos,
+#wandsLogo {
+    height: 40px;
+    margin: 10px;
+}
+
+#booksLogo {
+    height: 50px;
+    margin: 10px;
+}
+
+#mainLogo,
+#weasleyLogo,
+#quidditchLogo {
+    height: 70px;
+    margin: 10px;
+}
+
+a,
+#addProducts {
+    background: none;
+    color: #b3901b;
+}
+
+.img {
+    width: 280px;
+    height: 80px;
+    object-fit: contain;
+    margin: 15px 0px;
+}
+
+#mainSection {
+    display: flex;
+    justify-content: space-around;
+    background-color: #967b7e57;
+    padding-top: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 290px;
+    height: 410px;
+    margin: 10px;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+
+
+}
+
+.productImg {
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0;
+    align-self: center;
+}
+
+div.card:hover {
+    border: 2px solid #552f3d;
+    border-radius: 10px;
+    position: static;
+}
+
+.cardInfo {
+    width: 100%;
+    height: 70%;
+    background-color: rgb(227, 227, 227);
+    border-radius: 0px 0px 10px 10px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
+
+.category {
+    text-decoration: none;
+    width: fit-content;
+    background-color: #552f3d;
+    color: #b3901b;
+    font-size: 14px;
+    padding: 2px 5px;
+    margin: 5px;
+}
+
+.name {
+    height: 55px;
+    font-size: 17px;
+    margin: 5px;
+    overflow: scroll;
+    scroll-padding: 0px;
+
+
+}
+
+.description {
+    height: 90px;
+    font-size: 14px;
+    margin: 5px;
+    box-sizing: border-box;
+    overflow: scroll;
+    padding: 0px;
+}
+
+.addToCart {
+    font-size: 12px;
+    margin: 5px;
+
+}
+
+.addToCart:hover,
+#addProducts:hover {
+    color: #552f3d;
+    text-decoration: underline;
+}
+
+.price {
+    font-size: 12px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+aside {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+section#search {
+    margin-top: 50px;
+    width: 95%;
+    align-self: center;
+
+
+}
+
+input {
+    background-color: rgb(227, 227, 227);
+    color: rgb(37, 37, 37);
+    font-size: 16px;
+    font-style: italic;
+    width: 70%;
+    height: 50px;
+    padding: 5px;
+    text-align: left;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input:hover {
+    background-color: lightgray;
+}
+
+button#searchBtn {
+    height: 50px;
+    width: 28%;
+    font-size: 16px;
+    background-color: #552f3d;
+    color: #b3901b;
+}
+
+button#searchBtn:hover {
+    font-weight: bold;
+}
+
+section#shopCart {
+    width: 95%;
+    margin-top: 15px;
+    align-self: center;
+
+}
+
+h4#cartTitle {
+    background-color: #552f3d;
+    color: #b3901b;
+    display: block;
+    text-align: center;
+    height: 25px;
+    padding: 3px;
+
+}
+
+div#cart {
+    height: 330px;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.noProdCart {
+    height: 330px;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.itemImg {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background-color: white;
+    align-self: center;
+}
+
+.itemInfo {
+    width: 100%;
+    margin: 5px;
+    font-size: 10px;
+    font-style: normal;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.removeBtn {
+    background: none;
+    font-size: 10px;
+    font-style: normal;
+    text-align: left;
+}
+
+.footer {
+    height: 60px;
+    background-color: #552f3dd5;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#priceOnCart {
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
